@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    redirect_to homepage_path
+    redirect_to "/homepage"
   end
 
 

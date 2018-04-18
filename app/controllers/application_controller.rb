@@ -9,5 +9,5 @@ class ApplicationController < ActionController::Base
     current_user ||= session[:user_id]
   end
 
-  
+
 end

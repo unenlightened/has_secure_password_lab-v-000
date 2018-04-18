@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  get '/session/new', as: login
-  post '/session/create', as: login
+  get '/session/new', as: :login
+  post '/session/create', as: :login
   post '/logout' => 'sessions#destroy'
 
   resources :users, only: [:new, :create, :homepage]

@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
-      redirect_to 
+      redirect_to
   end
 
   def destroy

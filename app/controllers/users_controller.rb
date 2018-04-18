@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.valid?
+      session[:id] = @user.id
       redirect_to "/homepage"
     else
       redirect_to login_path
